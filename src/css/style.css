@@ -1,8 +1,18 @@
 :root{
     --cor-primaria: #21da5e;
 }
+p {
+    margin: 0px 0px 10px 450px;
+}
+h2 {
+    margin-left:580px ;
+}
+select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 header {
-    margin: -8px -8px 0px -20px;
+    margin: -8px -100px 0px -20px;
     padding: 30px 20px 20px 20px;
     background-color: var(--cor-primaria);
     max-height: 100px;
@@ -48,4 +58,34 @@ form article {
     height: 50px;
     cursor: pointer;
     padding-right: 30px;
+}
+#verde {
+    padding-right: 30px;
+}
+.nomeEmail {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#email {
+    margin-left: 10px;
+    width: 295px;
+}
+#nome {
+    margin-left: 10px;
+    width: 300px;
+}
+#sugest {
+    margin-left: 10px;
+}
+#mensagem {
+margin-left: 10px;
+}
+#mensagem2 {
+    margin: 20px 0px 10px 10px;
+    min-width: 400px;
+    max-width: 401px;
+    min-height: 150px;
+} 
+#formEnviar {
+    margin: 20px 0px 10px 10px;
 }

@@ -34,13 +34,13 @@ function abrir() {
             <h1>Menu</h1>
             
             <h4 id="info">Paginas Relacionadas:</h4>
-            <a href="#">Inicio</a>
+            <a href="./../pages/index.html">Inicio</a>
             <br>
-            <a href="#">Infirmações</a>
+            <a href="https://brasilescola.uol.com.br/geografia/enchentes.htm">Informações</a>
             <br>
-            <a href="#">Enviar sugestão</a>
+            <a href="./../pages/formulario.html">Enviar sugestão</a>
             <br>
-            <a href="#">Quiz</a>
+            <a href="./../pages/index.html">Quiz</a>
 
             <h4> mudar tema:</h4>
             <button class='mudardecor' id='mudarTema'> mudar tema para noturno </button>
