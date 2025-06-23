@@ -1,5 +1,5 @@
 :root{
-    --cor-primaria: #21da5e;
+    --cor-primaria1: #21da5e;
 }
 p {
     margin: 0px 0px 10px 450px;
@@ -12,11 +12,12 @@ select{
     margin-bottom: 10px;
 }
 header {
-    margin: -8px -100px 0px -20px;
+    margin: -130px -100px 0px -20px;
     padding: 30px 20px 20px 20px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-primaria1);
     max-height: 100px;
     position: fixed;
+    z-index: 100;
 }
 aside{
     position: absolute;
@@ -88,4 +89,52 @@ margin-left: 10px;
 } 
 #formEnviar {
     margin: 20px 0px 10px 10px;
+}
+.slideshow {
+    margin-left: 150px;
+    margin-top: 120px;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    8% { opacity: 1; }
+    33% { opacity: 1; }
+    41% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#informz {
+    margin-top: 100px;
+    margin-bottom: -30px;
+    margin-left: 450px;
 }
