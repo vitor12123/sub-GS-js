@@ -1,0 +1,24 @@
+section {
+    padding-top: 150px;
+}
+form {
+    border: solid 1px ;
+    margin: 0px 400px 150px 400px;
+}
+form h4 {
+    max-width: 350px;
+}
+form article {
+    max-width: 400px;
+}
+#infoQuiz {
+    margin-left: 475px;
+}
+.quiz {
+    margin-left: 50px;
+}
+#ultima {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+}
