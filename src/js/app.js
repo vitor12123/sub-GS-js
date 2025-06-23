@@ -50,7 +50,7 @@ function abrir() {
             `
             divHBG.append(menuAberto)
             menu.style.paddingRight = '130px'
-            divHBG.style.zIndex = '2'
+            divHBG.style.zIndex = '200'
             divHBG.style.left = '1155px'
             divHBG.style.paddingLeft = '15px'
             divHBG.style.backgroundColor = '#21da5e'
