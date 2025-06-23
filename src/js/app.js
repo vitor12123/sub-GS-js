@@ -1,3 +1,10 @@
+const menu = document.getElementById('menu')
+const divHBG = document.getElementById('menu2')
+let menuAberto = document.createElement('div')
+menuAberto.querySelector('a')
+const body = document.body
+const cor = document.querySelectorAll('.cor')
+
 const BTNenviar = document.getElementById('ultima')
 const total = document.getElementById('totalPontos')
 const pergunta1 = document.getElementById('p1')
@@ -10,6 +17,82 @@ const pergunta7 = document.getElementById('p7')
 const pergunta8 = document.getElementById('p8')
 const pergunta9 = document.getElementById('p9')
 const pergunta10 = document.getElementById('p10')
+
+divHBG.style.left = '1500px'
+divHBG.style.transition = '2.5s'
+menu.style.marginLeft = '1200px'
+
+let contador = 1
+
+function abrir() {
+    menu.addEventListener('click', () => {
+        contador++
+        if (contador % 2 == 0) {
+            menu.style.transition = '2s'
+            menu.style.marginLeft = '1060px'
+            menuAberto.innerHTML = `
+            <h1>Menu</h1>
+            
+            <h4 id="info">Paginas Relacionadas:</h4>
+            <a href="#">Inicio</a>
+            <br>
+            <a href="#">Infirmações</a>
+            <br>
+            <a href="#">Enviar sugestão</a>
+            <br>
+            <a href="#">Quiz</a>
+
+            <h4> mudar tema:</h4>
+            <button class='mudardecor' id='mudarTema'> mudar tema para noturno </button>
+            <button class='mudardecor' id='mudarTema2'> mudar para tema claro </button>
+            <button class='mudardecor' id='mudarTema3'> mudar para tema amarelo </button>
+            
+            `
+            divHBG.append(menuAberto)
+            menu.style.paddingRight = '130px'
+            divHBG.style.zIndex = '2'
+            divHBG.style.left = '1155px'
+            divHBG.style.paddingLeft = '15px'
+            divHBG.style.backgroundColor = '#21da5e'
+            divHBG.style.position = 'fixed'
+            divHBG.style.width = '200px'
+            divHBG.style.height = '1000px'
+            const Mudarpreto = document.getElementById('mudarTema')
+        Mudarpreto.addEventListener('click', () => {
+            body.style.backgroundColor = '#000'
+            cor.forEach(el => {
+            el.style.color = '#fff'
+            });
+        });
+        const MudarBranco = document.getElementById('mudarTema2')
+        MudarBranco.addEventListener('click', () => {
+            body.style.backgroundColor = '#fff'
+            cor.forEach(el => {
+            el.style.color = '#000'
+            });
+        });
+        const MudarAmarelo = document.getElementById('mudarTema3')
+        MudarAmarelo.addEventListener('click', () => {
+            body.style.backgroundColor = '#ffff99'
+            cor.forEach(el => {
+            el.style.color = '#000'
+            });
+        });
+
+        }
+        else if (contador % 2 != 0) {
+            menu.style.paddingRight = '110px'
+            menu.style.transition = '2s'
+            menu.style.marginLeft = '1120px'
+            divHBG.style.transition = '2s'
+            divHBG.style.left = '1570px'
+            divHBG.style.zIndex = '-2'
+            divHBG.style.backgroundColor = 'white'
+        }
+    })
+}
+
+abrir()
 
 function enviarquiz() {
     let resultado = 0
