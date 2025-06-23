@@ -5,19 +5,6 @@ menuAberto.querySelector('a')
 const body = document.body
 const cor = document.querySelectorAll('.cor')
 
-const BTNenviar = document.getElementById('ultima')
-const total = document.getElementById('totalPontos')
-const pergunta1 = document.getElementById('p1')
-const pergunta2 = document.getElementById('p2')
-const pergunta3 = document.getElementById('p3')
-const pergunta4 = document.getElementById('p4')
-const pergunta5 = document.getElementById('p5')
-const pergunta6 = document.getElementById('p6')
-const pergunta7 = document.getElementById('p7')
-const pergunta8 = document.getElementById('p8')
-const pergunta9 = document.getElementById('p9')
-const pergunta10 = document.getElementById('p10')
-
 divHBG.style.left = '1500px'
 divHBG.style.transition = '2.5s'
 menu.style.marginLeft = '1200px'
